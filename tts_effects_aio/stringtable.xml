@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="TTS Effects AIO">
+	<Package name="Modules">
+		<Container name="Change settings module">	
+            <Key ID="STR_tts_effects_aio_moduleConfigureMods_title">
+				<Original>Configure Mods</Original>
+				<English>Configure Mods</English>
+			</Key>
+            <Key ID="STR_tts_effects_aio_moduleConfigureMods_desc">
+				<Original>Controls which TTS Effects mods are enabled. Mods can be disabled individually to clear clutter in Zeus interface and prevent scripts from running when not being used.&lt;br/&gt;&lt;br/&gt;For some mods this will simply hide the ZEN modules but for others it may disable scripts from firing. Read the tooltip for each checkbox to see what it will enable/disable.</Original>
+				<English>Controls which TTS Effects mods are enabled. Mods can be disabled individually to clear clutter in Zeus interface and prevent scripts from running when not being used.&lt;br/&gt;&lt;br/&gt;For some mods this will simply hide the ZEN modules but for others it may disable scripts from firing. Read the tooltip for each checkbox to see what it will enable/disable.</English>
+			</Key>
+            <Container name="Param descriptions">
+                <Key ID="STR_tts_effects_aio_moduleConfigureMods_enableBeam_desc">
+                    <Original>If unchecked, TTS Beam Laser will be disabled.\n(ZEN modules will be hidden)</Original>
+                    <English>If unchecked, TTS Beam Laser will be disabled.\n(ZEN modules will be hidden)</English>
+                </Key>
+                <Key ID="STR_tts_effects_aio_moduleConfigureMods_enableCloak_desc">
+                    <Original>If unchecked, TTS Cloak will be disabled.\n(Some scripts will be disabled and ZEN modules will be hidden)</Original>
+                    <English>If unchecked, TTS Cloak will be disabled.\n(Some scripts will be disabled and ZEN modules will be hidden)</English>
+                </Key>
+                <Key ID="STR_tts_effects_aio_moduleConfigureMods_enableEmission_desc">
+                    <Original>If unchecked, TTS Emission (Blowout) will be disabled.\n(ZEN modules will be hidden)</Original>
+                    <English>If unchecked, TTS Emission (Blowout) will be disabled.\n(ZEN modules will be hidden)</English>
+                </Key>    
+            </Container>
+        </Container>
+	</Package>
+</Project>
