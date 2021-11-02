@@ -27,6 +27,12 @@ if (_activated) then {
 	private _enableCloak = _module getVariable ["EnableCloak", 1];
 	private _enableEmission = _module getVariable ["EnableEmission", 1];
 
+	// Enable Zeus modules
+	if (_enableBeam) then {call tts_beam_fnc_initCustomModules;};
+	if (_enableCloak) then {call tts_cloak_fnc_customZeusModules;};
+	if (_enableEmission) then {call tts_emission_fnc_initCustomModules;};
+
+	// Variables to let scripts know
 	tts_effects_aio_disable_beam = !_enableBeam;
 	tts_effects_aio_disable_cloak = !_enableCloak;
 	tts_effects_aio_disable_emission = !_enableEmission;
@@ -36,4 +42,6 @@ if (_activated) then {
 		"tts_effects_aio_disable_cloak",
 		"tts_effects_aio_disable_emission"
 	];
+
+	tts_effects_aio_init_done = true;
 };

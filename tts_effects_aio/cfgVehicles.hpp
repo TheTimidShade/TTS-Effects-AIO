@@ -26,7 +26,7 @@ class CfgVehicles {
 	};
 	
 	class tts_effects_aio_moduleConfigureMods : tts_effects_aio_module {
-		scope = 2;
+		scope = 1;
 		scopeCurator = 0; // module is not available in Zeus
 		isDisposable = 1; // 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work)
 		isGlobal = 0; // 0 for server only execution, 1 for global execution, 2 for persistent global execution
