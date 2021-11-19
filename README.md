@@ -4,6 +4,9 @@ Source code for my AIO pack.
 ## Changelog
 Read below for complete changelog history.
 
+### 11/11/2021
+- Re-enabled 'Configure Mods' module.
+
 ### 02/11/2021
 - Fixed missing CfgFunctions entry.
 - Hid 'Configure Mods' module since it's currently broken, will restore it when it's fixed.

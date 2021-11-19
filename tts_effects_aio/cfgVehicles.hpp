@@ -26,7 +26,7 @@ class CfgVehicles {
 	};
 	
 	class tts_effects_aio_moduleConfigureMods : tts_effects_aio_module {
-		scope = 1;
+		scope = 2;
 		scopeCurator = 0; // module is not available in Zeus
 		isDisposable = 1; // 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work)
 		isGlobal = 0; // 0 for server only execution, 1 for global execution, 2 for persistent global execution
@@ -41,19 +41,22 @@ class CfgVehicles {
 				property = "tts_effects_aio_moduleConfigureMods_EnableBeam";
 				displayName = "TTS Beam Laser";
 				tooltip = "$STR_tts_effects_aio_moduleConfigureMods_enableBeam_desc";
-				defaultValue = "1";
+				typeName = "BOOL";
+				defaultValue = "true";
 			};
 			class EnableCloak : Checkbox {
 				property = "tts_effects_aio_moduleConfigureMods_EnableCloak";
 				displayName = "TTS Cloak/Active Camo";
 				tooltip = "$STR_tts_effects_aio_moduleConfigureMods_enableCloak_desc";
-				defaultValue = "1";
+				typeName = "BOOL";
+				defaultValue = "true";
 			};
 			class EnableEmission : Checkbox {
 				property = "tts_effects_aio_moduleConfigureMods_EnableEmission";
 				displayName = "TTS Emission (Blowout)";
 				tooltip = "$STR_tts_effects_aio_moduleConfigureMods_enableEmission_desc";
-				defaultValue = "1";
+				typeName = "BOOL";
+				defaultValue = "true";
 			};
 			class ModuleDescription: ModuleDescription{};
 		};

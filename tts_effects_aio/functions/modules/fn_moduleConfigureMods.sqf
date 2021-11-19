@@ -27,21 +27,10 @@ if (_activated) then {
 	private _enableCloak = _module getVariable ["EnableCloak", 1];
 	private _enableEmission = _module getVariable ["EnableEmission", 1];
 
-	// Enable Zeus modules
-	if (_enableBeam) then {call tts_beam_fnc_initCustomModules;};
-	if (_enableCloak) then {call tts_cloak_fnc_customZeusModules;};
-	if (_enableEmission) then {call tts_emission_fnc_initCustomModules;};
+	// Let init script know which mods are disabled via variables
+	if (!_enableBeam) then {tts_effects_aio_beam_enabled = false; publicVariable "tts_effects_aio_beam_enabled";};
+	if (!_enableCloak) then {tts_effects_aio_cloak_enabled = false; publicVariable "tts_effects_aio_cloak_enabled";};
+	if (!_enableEmission) then {tts_effects_aio_emission_enabled = false; publicVariable "tts_effects_aio_emission_enabled";};
 
-	// Variables to let scripts know
-	tts_effects_aio_disable_beam = !_enableBeam;
-	tts_effects_aio_disable_cloak = !_enableCloak;
-	tts_effects_aio_disable_emission = !_enableEmission;
-
-	{publicVariable _x} forEach [
-		"tts_effects_aio_disable_beam",
-		"tts_effects_aio_disable_cloak",
-		"tts_effects_aio_disable_emission"
-	];
-
-	tts_effects_aio_init_done = true;
+	tts_effects_aio_init_done = true; publicVariable "tts_effects_aio_init_done";
 };
