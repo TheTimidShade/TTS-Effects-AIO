@@ -26,3 +26,8 @@ if (missionNamespace getVariable ["tts_effects_aio_cloak_enabled", true]) then {
 if (missionNamespace getVariable ["tts_effects_aio_emission_enabled", true]) then {
 	[] call tts_emission_fnc_initCustomModules;
 };
+
+// TTS Lights + Sirens
+if (missionNamespace getVariable ["tts_effects_aio_lns_enabled", true]) then {
+	[] call tts_lns_fnc_initCustomModules;
+};

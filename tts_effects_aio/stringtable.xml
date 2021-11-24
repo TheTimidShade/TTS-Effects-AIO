@@ -23,6 +23,10 @@
                     <Original>If unchecked, TTS Emission (Blowout) will be disabled.\n(ZEN modules will be hidden)</Original>
                     <English>If unchecked, TTS Emission (Blowout) will be disabled.\n(ZEN modules will be hidden)</English>
                 </Key>    
+                <Key ID="STR_tts_effects_aio_moduleConfigureMods_enableLightsSirens_desc">
+                    <Original>If unchecked, TTS Lights + Sirens will be disabled.\n(ZEN modules will be hidden)</Original>
+                    <English>If unchecked, TTS Lights + Sirens will be disabled.\n(ZEN modules will be hidden)</English>
+                </Key>  
             </Container>
         </Container>
 	</Package>

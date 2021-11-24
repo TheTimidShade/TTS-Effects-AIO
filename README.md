@@ -5,6 +5,9 @@ Source code for my AIO pack.
 Read below for complete changelog history.
 
 ### 11/11/2021
+- Added TTS Lights + Sirens to 'Configure Mods' module.
+
+### 11/11/2021
 - Re-enabled 'Configure Mods' module.
 
 ### 02/11/2021

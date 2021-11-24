@@ -58,6 +58,13 @@ class CfgVehicles {
 				typeName = "BOOL";
 				defaultValue = "true";
 			};
+			class EnableLightsSirens : Checkbox {
+				property = "tts_effects_aio_moduleConfigureMods_EnableLightsSirens";
+				displayName = "TTS Lights + Sirens";
+				tooltip = "$STR_tts_effects_aio_moduleConfigureMods_enableLightsSirens_desc";
+				typeName = "BOOL";
+				defaultValue = "true";
+			};
 			class ModuleDescription: ModuleDescription{};
 		};
 
